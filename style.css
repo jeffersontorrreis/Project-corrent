@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+}
+
+
+
+svg{
+    width: 40px;
+    height: 40px;
+}
+
+ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    list-style-type: none;
+}
+
+
+.botaoitem{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.2s;  
+    display: block; 
+}
+
+.botaoitem:hover{                       
+    background: #ed6886;
+    color: #424147;
+    box-shadow: inset 0 0 8px #0000007e; 
+}
+
+.drop-hover{
+    width: 2vw;
+    position: relative;            
+}
+
+.drop{
+    position: absolute;
+    background: #65636b;
+    width: 10vw;
+    height: 0;    
+    transition: 0.5s;
+    overflow: hidden;  
+}
+
+.drop-hover .botaomenu{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.drop-hover .drop a{  
+    padding: 10px;
+
+}
+
+
+.drop-hover:hover .drop{  
+    height: 96vh; 
+} 
